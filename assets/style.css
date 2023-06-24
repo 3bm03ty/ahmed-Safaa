@@ -1744,11 +1744,11 @@ header .main-menu nav ul li:last-child a {
 3. Slider area start here
 ....................................*/
 .slider-area{
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 .slider-area .container-fluid{
-  min-height: 100vh;
+  /* min-height: 100vh; */
 
 }
 .slider-area .bx-wrapper {
@@ -3246,7 +3246,16 @@ footer .copyright p {
 
 
 
-section{
-  position: relative;
-  top: -250px;
+@media screen and (min-width:1500px) {
+  section{
+    position: relative;
+    top: -250px;
+  }
+}
+
+@media screen and (max-width:500px) {
+  section{
+    position: relative;
+    top: 150px;
+  }
 }
